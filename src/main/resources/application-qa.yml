@@ -1,0 +1,4 @@
+---
+db.username: rootqa
+db.password: Passwdqa123
+db.url: jdbc:mysqL:localhostqa/poc

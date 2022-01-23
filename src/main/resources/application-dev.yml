@@ -1,0 +1,4 @@
+---
+db.username: rootdev
+db.password: Passwddev@123
+db.url: jdbc:mysqL:localhostdev/poc

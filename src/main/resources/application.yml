@@ -1,0 +1,23 @@
+---
+spring:
+  profiles:
+    active:
+      - EN
+      - dog
+      - prod
+#  Above profiles are converted to list instead of EN,dog,prod.
+db:
+  username: root
+  password: Passwd@123
+  url: jdbc:mysqL:localhost/poc
+
+# Adding of multiple profiles is possible in the YAML configuration as below. We have separate files for dev and qa but
+# now we will create a new prod property
+---
+spring:
+  profiles: prod
+
+db:
+  username: prdroot
+  password: prdpassword
+  url: jdbc:mysql/prd/poc
